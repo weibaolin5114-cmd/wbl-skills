@@ -9,6 +9,7 @@
 | 技能名 | 名称 | 版本 | 说明 |
 | --- | --- | --- | --- |
 | wbl-note-extract | 核心内容抓取 | 3.0.0 | 从公开网页或文章链接提取核心要点，生成结构化 Markdown 笔记。 |
+| wbl-ppt-guoyi | 企业演示文稿 | 1.4.0 | 按品牌粉设计系统生成 HTML 演示文稿和 PPTX。上传副本已去掉真实品牌标识和原始成稿。 |
 
 SkillHub 页面：https://skillhub.cn/skills/user_79141fa8/wbl-note-extract
 

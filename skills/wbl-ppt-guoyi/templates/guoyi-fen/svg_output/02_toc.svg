@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<image href="../images/logo.png" x="1041" y="44" width="220" height="31" preserveAspectRatio="xMidYMid meet"/>
+<text x="80" y="112" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#212121" font-weight="bold" letter-spacing="0.5">目录</text>
+<rect x="80" y="192" width="262" height="356" fill="#F7F8FA"/>
+<text x="108" y="272" xml:space="preserve" font-family="Arial, sans-serif" font-size="40" fill="#CF2154" font-weight="bold">01</text>
+<text x="108" y="332" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#212121" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
+<text x="108" y="388" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_1_L1}}</text>
+<text x="108" y="414" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_1_L2}}</text>
+<text x="108" y="440" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_1_L3}}</text>
+<rect x="366" y="192" width="262" height="356" fill="#F7F8FA"/>
+<text x="394" y="272" xml:space="preserve" font-family="Arial, sans-serif" font-size="40" fill="#CF2154" font-weight="bold">02</text>
+<text x="394" y="332" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#212121" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
+<text x="394" y="388" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_2_L1}}</text>
+<text x="394" y="414" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_2_L2}}</text>
+<text x="394" y="440" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_2_L3}}</text>
+<rect x="652" y="192" width="262" height="356" fill="#F7F8FA"/>
+<text x="680" y="272" xml:space="preserve" font-family="Arial, sans-serif" font-size="40" fill="#CF2154" font-weight="bold">03</text>
+<text x="680" y="332" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#212121" font-weight="bold">{{TOC_ITEM_3_TITLE}}</text>
+<text x="680" y="388" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_3_L1}}</text>
+<text x="680" y="414" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_3_L2}}</text>
+<text x="680" y="440" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_3_L3}}</text>
+<rect x="938" y="192" width="262" height="356" fill="#F7F8FA"/>
+<text x="966" y="272" xml:space="preserve" font-family="Arial, sans-serif" font-size="40" fill="#CF2154" font-weight="bold">04</text>
+<text x="966" y="332" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#212121" font-weight="bold">{{TOC_ITEM_4_TITLE}}</text>
+<text x="966" y="388" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_4_L1}}</text>
+<text x="966" y="414" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_4_L2}}</text>
+<text x="966" y="440" xml:space="preserve" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#6B7280">• {{TOC_ITEM_4_L3}}</text>
+</svg>
