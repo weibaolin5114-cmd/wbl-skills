@@ -7,11 +7,11 @@
 | 技能名 | 名称 | 版本 | 说明 |
 | --- | --- | --- | --- |
 | wbl-note-extract | 核心内容抓取 | 3.0.0 | 从公开网页或文章链接提取核心要点，生成结构化 Markdown 笔记。SkillHub：https://skillhub.cn/skills/user_79141fa8/wbl-note-extract |
-| wbl-ppt-guoyi | 企业演示文稿 | 1.4.0 | 按品牌粉设计系统生成 HTML 演示文稿和 PPTX。仓库中的副本已去掉真实品牌标识和原始成稿。 |
+| wbl-ppt-guoyi | 生成汇报PPT | 1.4.0 | 按品牌粉设计系统生成 HTML 演示文稿和 PPTX。仓库中的副本已去掉真实品牌标识和原始成稿。 |
 
 ## 只下载其中一个技能
 
-仓库是私有的，克隆时用账号 `weibaolin5114-cmd` 登录。把下面命令里的 `wbl-note-extract` 换成技能清单中的技能名。
+仓库是公开的，克隆不需要登录。把下面命令里的 `wbl-note-extract` 换成技能清单中的技能名。
 
 这台电脑的全局 Git 配置会把 GitHub 转到 `ghfast.top`，直连 `github.com` 又会被重置。克隆前在同一窗口先执行下面几行，只对当前窗口生效，不改全局配置：
 

@@ -1,10 +1,10 @@
 ---
 name: wbl-ppt-guoyi
-description: 企业PPT制作专家。基于品牌粉设计系统，经素材验证→需求探询→大纲打磨→格式选择后，生成专业统一的 HTML演示文稿、PPTX，或二者同时交付。当用户说"做PPT"、"生成PPT"、"企业PPT"、"做汇报PPT"、"HTML PPT"、"做演示文稿"时触发。
+description: 生成汇报PPT。基于品牌粉设计系统，经素材验证→需求探询→大纲打磨→格式选择后，生成专业统一的 HTML演示文稿、PPTX，或二者同时交付。当用户说"生成汇报PPT"、"做PPT"、"生成PPT"、"做汇报PPT"、"HTML PPT"、"做演示文稿"时触发。
 version: 1.4.0
 ---
 
-# 企业PPT制作专家 (wbl-ppt-guoyi)
+# 生成汇报PPT (wbl-ppt-guoyi)
 
 > 品牌粉（`#CF2154`）演示文稿技能。设计取向：**极简、大留白、冷灰 + 一点粉、平面色块、左对齐**。
 
