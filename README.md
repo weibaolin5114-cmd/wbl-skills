@@ -2,47 +2,43 @@
 
 个人 Agent 技能源码。每个技能一个目录，放在 `skills/` 下，目录名与该技能 `SKILL.md` 里的 `name` 一致。
 
-## 技能清单
+## 技能介绍
 
-| 技能名 | 名称 | 版本 | 说明 |
-| --- | --- | --- | --- |
-| wbl-note-extract | 核心内容抓取 | 3.0.0 | 从公开网页或文章链接提取核心要点，生成结构化 Markdown 笔记。SkillHub：https://skillhub.cn/skills/user_79141fa8/wbl-note-extract |
-| wbl-ppt-guoyi | 生成汇报PPT | 1.4.0 | 按品牌粉设计系统生成 HTML 演示文稿和 PPTX。仓库中的副本已去掉真实品牌标识和原始成稿。 |
+### 核心内容抓取
 
-## 只下载其中一个技能
+`wbl-note-extract` · v3.0.0 · [SkillHub](https://skillhub.cn/skills/user_79141fa8/wbl-note-extract)
 
-仓库是公开的，克隆不需要登录。把下面命令里的 `wbl-note-extract` 换成技能清单中的技能名。
+给一个公开网页或文章链接，读完正文和图片里的信息，去掉铺垫、推广和重复，整理成可以收藏、可以复用的 Markdown 笔记。
 
-这台电脑的全局 Git 配置会把 GitHub 转到 `ghfast.top`，直连 `github.com` 又会被重置。克隆前在同一窗口先执行下面几行，只对当前窗口生效，不改全局配置：
+**核心功能**
 
-```powershell
-$tmp = Join-Path $env:TEMP "gitconfig-empty-wbl.txt"
-Set-Content -Path $tmp -Value "" -Encoding ascii
-$env:GIT_CONFIG_GLOBAL = $tmp
-$env:HTTP_PROXY = "http://127.0.0.1:7892"
-$env:HTTPS_PROXY = "http://127.0.0.1:7892"
-```
+- 按页面类型抓取：静态文章直接取正文；需要渲染的动态页改走浏览器；图文卡帖逐张理解图片。
+- 区分信息图和装饰图。教程截图、流程图、参数图、对比图会读进笔记；封面、分割线、头像和页尾二维码忽略。
+- 保留操作步骤、参数、结论，以及原文里的提示词和代码。背景故事、引导关注和重复表述不写入。
+- 输出带标题、来源、1 到 3 个主题标签，并把入库日期和原文发布日期分开。
+- 多条链接各写一篇，不合并成一篇。
 
-然后下载指定技能：
+**亮点**
 
-```powershell
-git clone --depth 1 --filter=blob:none --sparse https://github.com/weibaolin5114-cmd/wbl-skills.git
-cd wbl-skills
-git sparse-checkout set skills/wbl-note-extract
-```
+- 先判断什么值得留下，再组织成结构，而不是把全文缩短一遍。
+- 抓不到正文时说明卡在哪一步，不凭标题或摘要补写内容。
+- 自带格式自检，处理抓取残留的加粗失效和列表符号重复。
 
-完成后，文件在 `wbl-skills\skills\wbl-note-extract`。把这个文件夹整个复制到当前 AI 应用的技能目录，文件夹名保持不变。
+### 生成汇报PPT
 
-| 应用 | 技能目录 |
-| --- | --- |
-| Cursor | `%USERPROFILE%\.cursor\skills\` |
-| WorkBuddy | `%USERPROFILE%\.workbuddy\skills\` |
+`wbl-ppt-guoyi` · v1.4.0
 
-复制后新开一轮对话，该技能即可被触发。
+按同一套品牌粉（`#CF2154`）设计系统做汇报。可以交付 HTML 演示文稿、可编辑 PPTX，或两者一起交付。
 
-## 新增一个技能
+**核心功能**
 
-1. 在 `skills/` 下新建目录，名字与新技能 `SKILL.md` 的 `name` 相同。
-2. 只放入可安装源码：`SKILL.md`，以及实际用到的 `scripts/`、`references/`、`templates/`。
-3. 在技能清单补一行：技能名、中文名、版本、一句话说明。
-4. 单独提交一次，说明里写技能名和版本号。
+- 先核对素材、问清目标受众和时长，再逐章打磨大纲。大纲确认后才选择 HTML、PPTX 或两者都要。
+- HTML 与 PPTX 共用一套视觉规则：1280×720、冷灰加一点粉、大留白、平面色块、左对齐。
+- PPTX 里的文字是文本框，图形是形状、图表或表格，导出后做可编辑性检查。
+- 粉色只作强调。页面层级靠字号和明度，不靠描边、阴影和圆角堆出来。
+
+**亮点**
+
+- 成稿前有明确的停顿点，结构和格式都要确认，避免直接生成一版再大改。
+- 规则分成硬约束、设计原则和参考区间，页面不会被一套死数字管死。
+- 相邻页使用不同骨架，连续翻页时版式不会完全重复。
